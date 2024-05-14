@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -30,7 +30,7 @@ export default function RootLayout({
               <MainNav />
             </div>
           </header>
-          <main className='container'>{children}</main>
+          <main className='container mt-1'>{children}</main>
         </ThemeProvider>
       </body>
     </html>
