@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import MainNav from '@/components/main-nav'
+import { ModeToggle } from '@/components/mode-toggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <header className="container z-40 bg-background">
             <div className="flex h-20 items-center justify-between py-6">
               <MainNav />
+              <ModeToggle />
             </div>
           </header>
           <main className='container mt-1'>{children}</main>
