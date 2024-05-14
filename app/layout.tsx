@@ -2,6 +2,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import MainNav from '@/components/main-nav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <header className="container z-40 bg-background">
+            <div className="flex h-20 items-center justify-between py-6">
+              <MainNav />
+            </div>
+          </header>
+          <main className='container'>{children}</main>
         </ThemeProvider>
       </body>
     </html>
