@@ -1,0 +1,46 @@
+{
+	"tickets": [
+		{
+			"id": "1",
+			"title": "Fix broken footer links",
+			"body": "The links in the website footer are not working properly. Clicking them does not lead to the intended pages. Please investigate and fix this issue.",
+			"priority": "low",
+			"user_email": "mario@shehab910.dev"
+		},
+		{
+			"id": "2",
+			"title": "Implement a new responsive design stylesheet",
+			"body": "The website currently does not adapt well to different screen sizes. Create and implement a new stylesheet that ensures a responsive layout across all devices.",
+			"priority": "medium",
+			"user_email": "mario@shehab910.dev"
+		},
+		{
+			"id": "3",
+			"title": "Update copyright year in the footer",
+			"body": "The copyright year mentioned in the footer is outdated. Please update it to the current year.",
+			"priority": "high",
+			"user_email": "peach@shehab910.dev"
+		},
+		{
+			"id": "Lz7hdAA",
+			"title": "Investigate contact form submission issue",
+			"body": "A user reported an issue where the contact form is not submitting emails successfully. Please investigate and fix this bug.",
+			"priority": "low",
+			"user_email": "luigi@shehab910.dev"
+		},
+		{
+			"id": "2xuC0U4",
+			"title": "Update product image on homepage",
+			"body": "The main product image displayed on the homepage needs to be updated with a newer version. Please replace the current image with the latest product photo.",
+			"priority": "medium",
+			"user_email": "bowser@shehab910.dev"
+		},
+		{
+			"id": "4hJqpVD",
+			"title": "Add social media icons to header",
+			"body": "The website header currently lacks social media icons. Please add icons for the company's social media profiles (e.g., Facebook, Twitter, Instagram).",
+			"priority": "high",
+			"user_email": "daisy@shehab910.dev"
+		}
+	]
+}

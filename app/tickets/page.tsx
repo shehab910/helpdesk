@@ -1,8 +1,13 @@
+import Headding from '@/components/headding'
 import React from 'react'
+import TicketList from './ticket-list'
 
 function Tickets() {
 	return (
-		<div>Tickets</div>
+		<>
+			<Headding>Tickets</Headding>
+			<TicketList />
+		</>
 	)
 }
 

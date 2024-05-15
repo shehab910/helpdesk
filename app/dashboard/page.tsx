@@ -28,7 +28,7 @@ const companyUpdates = [
 
 function Dashboard() {
 	return (
-		<div className='md:m-10'>
+		<>
 			<Headding>Dashboard</Headding>
 			<p className='m-auto max-w-[70rem] text-base lg:text-lg text-popover-foreground md:text-justify'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam similique voluptas, ipsam illo odit impedit recusandae fugit illum repellat laborum fuga excepturi eveniet at quod debitis expedita distinctio laudantium nulla, vel voluptatibus minus. Ullam perferendis vel beatae error natus repellendus modi voluptas recusandae quis labore sit temporibus vitae ipsa, doloremque explicabo voluptatem doloribus? Adipisci ex quia quisquam consectetur repellat iste fugit odio nam sint dolorem? Blanditiis provident suscipit labore, dolor nisi mollitia laborum pariatur tempore libero temporibus inventore saepe ratione.
@@ -43,9 +43,9 @@ function Dashboard() {
 			<div className='flex flex-col gap-5 items-center'>
 				{
 					companyUpdates.map((update) =>
-						<Card className='max-w-[70rem]'>
+						<Card className='w-11/12 max-w-[70rem]'>
 							<CardHeader>
-								<CardTitle className='text-lg md:text-xl'>{update.title}</CardTitle>
+								<CardTitle className='capitalize text-lg md:text-xl'>{update.title}</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<p>{update.content}</p>
@@ -54,8 +54,7 @@ function Dashboard() {
 					)
 				}
 			</div>
-
-		</div>
+		</>
 	)
 }
 
