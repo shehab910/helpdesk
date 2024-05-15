@@ -1,10 +1,6 @@
-import {
-	MessageCircleQuestion,
-	X,
-} from "lucide-react"
-
+import { MessageCircleQuestion, X } from 'lucide-react';
 
 export const Icons = {
-	logo: MessageCircleQuestion,
-	close: X,
-}
+  logo: MessageCircleQuestion,
+  close: X,
+};

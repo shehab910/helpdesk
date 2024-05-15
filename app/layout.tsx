@@ -1,35 +1,35 @@
-import { ThemeProvider } from '@/components/theme-provider'
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import MainNav from '@/components/main-nav'
-import { ModeToggle } from '@/components/mode-toggle'
-import { NavItem } from '@/types'
+import { ThemeProvider } from '@/components/theme-provider';
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import MainNav from '@/components/main-nav';
+import { ModeToggle } from '@/components/mode-toggle';
+import { NavItem } from '@/types';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'HelpDesk',
   // description: '',
-}
+};
 
 const routes: NavItem[] = [
   {
-    title: "Dashboard",
-    href: "dashboard",
+    title: 'Dashboard',
+    href: 'dashboard',
     disabled: false,
   },
   {
-    title: "Tickets",
-    href: "tickets",
+    title: 'Tickets',
+    href: 'tickets',
     disabled: false,
   },
-]
+];
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -46,9 +46,9 @@ export default function RootLayout({
               <ModeToggle />
             </div>
           </header>
-          <main className='m-10 md:m-16 lg:m-24'>{children}</main>
+          <main className="m-10 md:m-16 lg:m-24">{children}</main>
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
