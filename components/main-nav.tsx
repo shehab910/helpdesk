@@ -16,20 +16,6 @@ interface MainNavProps {
 }
 
 function MainNav({ items, children }: MainNavProps) {
-	if (items === undefined) {
-		items = [
-			{
-				title: "Dashboard",
-				href: "dashboard",
-				disabled: false,
-			},
-			{
-				title: "Tickets",
-				href: "tickets",
-				disabled: false,
-			},
-		]
-	}
 	const segment = useSelectedLayoutSegment()
 	const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
