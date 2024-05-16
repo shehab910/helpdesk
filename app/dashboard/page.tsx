@@ -49,8 +49,8 @@ function Dashboard() {
       <Separator />
       <Headding>Company Updates</Headding>
       <div className="flex flex-col gap-5 items-center">
-        {companyUpdates.map((update) => (
-          <Card className="w-11/12 max-w-[70rem]">
+        {companyUpdates.map((update, i) => (
+          <Card key={i} className="w-11/12 max-w-[70rem]">
             <CardHeader>
               <CardTitle className="capitalize text-lg md:text-xl">
                 {update.title}

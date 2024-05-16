@@ -11,7 +11,7 @@ function NotFound() {
       <div className="w-9/12 flex items-center justify-center lg:justify-end">
         <div className="w-max flex flex-col gap-4">
           <h1 className="font-bold text-3xl text-primary/80 dark:text-foreground/80">
-            We can't find the page you looking for.
+            {"We can't find the page you looking for."}
           </h1>
           <p>Please double check the URL and try again.</p>
           <p>
