@@ -9,7 +9,7 @@ export const dynamicParams = true;
 export async function generateStaticParams() {
   const res = await fetch(process.env.API_URL);
   const tickets = await res.json();
-  return tickets.map((ticket: TicketT) => ({ id: ticket.id.toString() }));
+  return tickets.map((ticket: TicketT) => ({ id: `${ticket?.id}` }));
 }
 
 async function getTicket(id: number | string): Promise<TicketT> {

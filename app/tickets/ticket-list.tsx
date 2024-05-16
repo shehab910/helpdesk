@@ -24,6 +24,7 @@ async function TicketList() {
     <div className="flex flex-col gap-5 items-center">
       {tickets?.map((ticket) => (
         <Ticket
+          key={ticket.id}
           href={`/tickets/${ticket.id}`}
           ticket={ticket}
           limitBody={200}
