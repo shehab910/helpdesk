@@ -46,7 +46,7 @@ export default function RootLayout({
               <ModeToggle />
             </div>
           </header>
-          <main className="m-10 md:m-16 lg:m-24">{children}</main>
+          <main className="m-12 md:mx-16 lg:mx-32 ">{children}</main>
         </ThemeProvider>
       </body>
     </html>
