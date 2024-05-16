@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 const routes: NavItem[] = [
   {
     title: 'Dashboard',
-    href: 'dashboard',
+    href: '/dashboard',
     disabled: false,
   },
   {
     title: 'Tickets',
-    href: 'tickets',
+    href: '/tickets',
     disabled: false,
   },
 ];
