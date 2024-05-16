@@ -2,7 +2,7 @@ import { TicketT } from '@/types';
 import Ticket from './ticket';
 
 async function getTickets(): Promise<TicketT[]> {
-  const tickets = await fetch('http://localhost:4000/tickets', {
+  const tickets = await fetch(process.env.API_URL, {
     next: {
       revalidate: 0, // Disable cache
     },

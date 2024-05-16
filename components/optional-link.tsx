@@ -11,7 +11,7 @@ function OptLink(props: OptLinkProps) {
     return <>{props.children}</>;
   }
   return (
-    <Link className="flex-wrap" {...props}>
+    <Link className="flex-wrap" {...{ ...props, isLink: undefined }}>
       {props.children}
     </Link>
   );
