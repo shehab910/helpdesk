@@ -1,12 +1,15 @@
 import Headding from '@/components/headding';
-import React from 'react';
+import React, { Suspense } from 'react';
 import TicketList from './ticket-list';
+import Loading from '../loading';
 
 function Tickets() {
   return (
     <>
       <Headding>Tickets</Headding>
-      <TicketList />
+      <Suspense fallback={<Loading />}>
+        <TicketList />
+      </Suspense>
     </>
   );
 }

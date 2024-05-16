@@ -27,7 +27,7 @@ function MobileNav({ items, setShowMobileMenu, children }: MobileNavProps) {
           href="/"
           className="flex items-center space-x-2"
         >
-          <Icons.logo />
+          <Icons.logo className="text-popover-foreground" />
           <span className="font-bold">{siteConfig.name}</span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
