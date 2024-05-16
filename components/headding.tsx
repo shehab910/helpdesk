@@ -8,7 +8,7 @@ interface HeaddingProps {
 
 function Headding({ className = '', children }: HeaddingProps) {
   return (
-    <h2 className={cn('font-bold text-xl my-8 md:text-2xl', className)}>
+    <h2 className={cn('font-bold text-xl my-14 md:text-2xl', className)}>
       {children}
     </h2>
   );
