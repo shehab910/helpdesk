@@ -32,7 +32,7 @@ function getBadgeVariant(priority: TicketT['priority']) {
 
 function Ticket({ ticket, limitBody, showEmail, href }: TicketProps) {
   return (
-    <Card className="w-11/12 max-w-[70rem]">
+    <Card>
       <OptLink isLink={href !== undefined} href={href || '#'}>
         <CardHeader>
           <CardTitle className="capitalize">{ticket.title}</CardTitle>

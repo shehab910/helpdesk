@@ -35,9 +35,7 @@ async function TicketDetails({ params }: TicketDetailsProps) {
   return (
     <>
       <Headding>Ticket Details</Headding>
-      <div className="flex flex-col items-center">
-        <Ticket ticket={ticket} showEmail />
-      </div>
+      <Ticket ticket={ticket} showEmail />
     </>
   );
 }

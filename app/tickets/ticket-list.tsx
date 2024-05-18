@@ -14,14 +14,14 @@ async function TicketList() {
   const tickets = await getTickets();
   if (tickets?.length === 0) {
     return (
-      <p className="text-center capitalize text-2xl font-semibold tracking-wider">
+      <p className="text-center capitalize text-2xl font-semibold">
         No tickets found!
       </p>
     );
   }
 
   return (
-    <div className="flex flex-col gap-5 items-center">
+    <div className="space-y-5">
       {tickets?.map((ticket) => (
         <Ticket
           key={ticket.id}

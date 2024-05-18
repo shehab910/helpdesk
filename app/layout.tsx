@@ -33,20 +33,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`min-h-[100vh] grid grid-rows-[auto_1fr] ${inter.className}`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <header className="mx-10 lg:mx-24 z-40 bg-background">
-            <div className="flex h-20 items-center justify-between py-6">
+          <header className="z-40 bg-background px-8">
+            <div className="max-w-screen-lg w-full mx-auto flex h-20 items-center justify-between py-6">
               <MainNav items={routes} />
               <ModeToggle />
             </div>
           </header>
-          <main className="m-12 md:mx-16 lg:mx-32 ">{children}</main>
+          <main className="max-w-screen-lg w-full mx-auto px-8">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>

@@ -27,7 +27,7 @@ function Dashboard() {
   return (
     <>
       <Headding>Dashboard</Headding>
-      <p className="m-auto max-w-[70rem] text-base lg:text-lg text-popover-foreground md:text-justify">
+      <p className="text-base lg:text-lg text-popover-foreground md:text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam similique
         voluptas, ipsam illo odit impedit recusandae fugit illum repellat
         laborum fuga excepturi eveniet at quod debitis expedita distinctio
@@ -38,19 +38,19 @@ function Dashboard() {
         dolorem? Blanditiis provident suscipit labore, dolor nisi mollitia
         laborum pariatur tempore libero temporibus inventore saepe ratione.
       </p>
-      <div className="block m-auto my-10 text-center md:my-16">
+      <div className="m-auto my-10 text-center md:my-16">
         <Link
           href="/tickets"
-          className="tracking-widest bg-primary font-semibold py-3 px-3 rounded-sm text-primary-foreground text-base md:text-lg"
+          className="uppercase tracking-widest bg-primary font-semibold py-3 px-5 rounded-sm text-primary-foreground text-base md:text-lg"
         >
           View Tickets
         </Link>
       </div>
       <Separator />
       <Headding>Company Updates</Headding>
-      <div className="flex flex-col gap-5 items-center">
+      <div className="space-y-5">
         {companyUpdates.map((update, i) => (
-          <Card key={i} className="w-11/12 max-w-[70rem]">
+          <Card key={i}>
             <CardHeader>
               <CardTitle className="capitalize text-lg md:text-xl">
                 {update.title}
