@@ -5,6 +5,9 @@ import { Inter } from 'next/font/google';
 import MainNav from '@/components/main-nav';
 import { ModeToggle } from '@/components/mode-toggle';
 import { NavItem } from '@/types';
+import { Button } from '@/components/ui/button';
+import { Github } from 'lucide-react';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -45,7 +48,18 @@ export default function RootLayout({
           <header className="z-40 bg-background px-8">
             <div className="max-w-screen-lg w-full mx-auto flex h-20 items-center justify-between py-6">
               <MainNav items={routes} />
-              <ModeToggle />
+              <div className="flex gap-4 items-center">
+                <Button variant="outline" size="icon" asChild>
+                  <a
+                    href="https://github.com/shehab910/helpdesk"
+                    target="_blank"
+                  >
+                    <Github />
+                    <span className="sr-only">Github Repository</span>
+                  </a>
+                </Button>
+                <ModeToggle />
+              </div>
             </div>
           </header>
           <main className="max-w-screen-lg w-full mx-auto px-8">
