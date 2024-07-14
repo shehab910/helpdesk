@@ -6,8 +6,6 @@ Built with Next.js, this application provides a responsive, intuitive user inter
 
 ## Features
 
----
-
 - **Dashboard**: A central hub for viewing the latest company updates, announcements, and metrics.
 
 - **Responsive Design**: Utilizing TailwindCSS, HelpDesk offers a fully responsive design that ensures a seamless user experience across all devices.
@@ -15,8 +13,6 @@ Built with Next.js, this application provides a responsive, intuitive user inter
 - **Customizable Theme**: With built-in support for light and dark modes, users can customize the appearance of the application to their preference.
 
 ## Technologies
-
----
 
 HelpDesk is built using the following technologies:
 
@@ -26,8 +22,6 @@ HelpDesk is built using the following technologies:
 - **Radix UI**: A set of accessible UI primitives for building high-quality, customizable design systems and web applications.
 
 ## Getting Started
-
----
 
 To get a local copy up and running follow these simple steps:
 
@@ -46,12 +40,8 @@ To get a local copy up and running follow these simple steps:
 
 ## License
 
----
-
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
-
----
 
 - [@shadcn-ui](https://github.com/shadcn-ui/ui)
